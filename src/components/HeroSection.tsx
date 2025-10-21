@@ -3,10 +3,14 @@ import { ArrowRight } from "lucide-react";
 import heroBackground from "@/assets/hero-background.png";
 
 interface HeroSectionProps {
-  onOpenModal: () => void;
+  onOpenModal?: () => void;
 }
 
 export const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
+  const handleCTA = () => {
+    window.open('https://yayforms.link/8gGJGqV', '_blank');
+  };
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-deep-black">
       {/* Background image with overlay */}
@@ -33,7 +37,7 @@ export const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
           </p>
           
           <Button
-            onClick={onOpenModal}
+            onClick={handleCTA}
             size="lg"
             className="bg-azuri-blue hover:bg-azuri-blue/90 text-pure-white font-semibold px-8 py-6 text-lg rounded-2xl shadow-[0_10px_40px_-10px_hsl(193_55%_54%/0.5)] hover:shadow-[0_15px_50px_-10px_hsl(193_55%_54%/0.7)] transition-all duration-300 hover:scale-105"
           >

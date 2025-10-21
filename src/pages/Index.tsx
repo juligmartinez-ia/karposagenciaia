@@ -8,27 +8,21 @@ import { WhyKarposSection } from "@/components/WhyKarposSection";
 import { SpecialistSection } from "@/components/SpecialistSection";
 import { ApplicationSection } from "@/components/ApplicationSection";
 import { ClosingSection } from "@/components/ClosingSection";
-import { ApplicationModal } from "@/components/ApplicationModal";
+import { Footer } from "@/components/Footer";
 
 const Index = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   return (
     <main className="min-h-screen">
-      <HeroSection onOpenModal={() => setIsModalOpen(true)} />
-      <LosingMoneySection onOpenModal={() => setIsModalOpen(true)} />
+      <HeroSection />
+      <LosingMoneySection />
       <ChallengesSection />
-      <StrategicMeetingSection onOpenModal={() => setIsModalOpen(true)} />
+      <StrategicMeetingSection />
       <DiscoverySection />
       <WhyKarposSection />
       <SpecialistSection />
-      <ApplicationSection onOpenModal={() => setIsModalOpen(true)} />
-      <ClosingSection onOpenModal={() => setIsModalOpen(true)} />
-      
-      <ApplicationModal 
-        isOpen={isModalOpen} 
-        onClose={() => setIsModalOpen(false)} 
-      />
+      <ApplicationSection />
+      <ClosingSection />
+      <Footer />
     </main>
   );
 };

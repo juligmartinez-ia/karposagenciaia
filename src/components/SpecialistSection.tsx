@@ -1,5 +1,5 @@
 import julianaImage from "@/assets/juliana-martinez.jpg";
-import { Quote } from "lucide-react";
+import { Quote, Instagram } from "lucide-react";
 
 export const SpecialistSection = () => {
   return (
@@ -41,6 +41,16 @@ export const SpecialistSection = () => {
                   "Enquanto você cuida da saúde de seus pacientes, nós cuidamos da saúde de sua operação."
                 </p>
               </div>
+              
+              <a
+                href="https://www.instagram.com/julianamartinezmkt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-azuri-blue hover:text-azuri-blue/80 transition-colors duration-300 font-medium"
+              >
+                <Instagram className="h-5 w-5" />
+                @julianamartinezmkt
+              </a>
             </div>
           </div>
         </div>

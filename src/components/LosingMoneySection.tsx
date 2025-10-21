@@ -2,10 +2,13 @@ import { Button } from "@/components/ui/button";
 import { AlertCircle, Clock, Users, TrendingDown } from "lucide-react";
 
 interface LosingMoneySectionProps {
-  onOpenModal: () => void;
+  onOpenModal?: () => void;
 }
 
 export const LosingMoneySection = ({ onOpenModal }: LosingMoneySectionProps) => {
+  const handleCTA = () => {
+    window.open('https://yayforms.link/8gGJGqV', '_blank');
+  };
   const problems = [
     {
       icon: Clock,
@@ -59,7 +62,7 @@ export const LosingMoneySection = ({ onOpenModal }: LosingMoneySectionProps) => 
           
           <div className="text-center">
             <Button
-              onClick={onOpenModal}
+              onClick={handleCTA}
               variant="outline"
               size="lg"
               className="border-2 border-azuri-blue text-azuri-blue hover:bg-azuri-blue hover:text-pure-white font-semibold px-8 py-6 text-lg rounded-2xl transition-all duration-300"
