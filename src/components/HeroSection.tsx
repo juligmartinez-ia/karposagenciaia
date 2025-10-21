@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import heroBackground from "@/assets/hero-background.png";
 
 interface HeroSectionProps {
   onOpenModal: () => void;
@@ -7,12 +8,22 @@ interface HeroSectionProps {
 
 export const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-deep-black via-deep-black to-azuri-blue/20">
-      {/* Animated background grid */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#41B3D210_1px,transparent_1px),linear-gradient(to_bottom,#41B3D210_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-deep-black">
+      {/* Background image with overlay */}
+      <div className="absolute inset-0">
+        <div 
+          className="absolute inset-0 bg-cover bg-center md:bg-top"
+          style={{ 
+            backgroundImage: `url(${heroBackground})`,
+            backgroundPosition: 'center top'
+          }}
+        />
+        {/* Gradient overlay - stronger on mobile, positioned on right side for desktop */}
+        <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-deep-black/80 via-deep-black/60 to-transparent md:from-transparent md:via-deep-black/70 md:to-deep-black/95" />
+      </div>
       
       <div className="container mx-auto px-4 py-20 relative z-10">
-        <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
+        <div className="max-w-4xl mx-auto md:ml-auto md:mr-0 text-center md:text-left animate-fade-in-up">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-exo font-bold text-pure-white mb-6 leading-tight">
             Transforme o atendimento de sua clínica com inteligência artificial e reduza custos de equipe enquanto mantém seus agendamentos ativos 24h por dia
           </h1>
