@@ -8,22 +8,22 @@ interface HeroSectionProps {
 
 export const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-deep-black">
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-deep-black">
       {/* Background image with overlay */}
       <div className="absolute inset-0">
         <div 
-          className="absolute inset-0 bg-cover bg-center md:bg-top"
+          className="absolute inset-0 bg-cover bg-left-top md:bg-left-top opacity-90"
           style={{ 
             backgroundImage: `url(${heroBackground})`,
-            backgroundPosition: 'center top'
+            backgroundPosition: 'left top'
           }}
         />
-        {/* Gradient overlay - stronger on mobile, positioned on right side for desktop */}
-        <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-deep-black/80 via-deep-black/60 to-transparent md:from-transparent md:via-deep-black/70 md:to-deep-black/95" />
+        {/* Gradient overlay - creates dark area for text on right/bottom */}
+        <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-transparent via-deep-black/70 to-deep-black md:from-transparent md:via-deep-black/80 md:to-deep-black" />
       </div>
       
       <div className="container mx-auto px-4 py-20 relative z-10">
-        <div className="max-w-4xl mx-auto md:ml-auto md:mr-0 text-center md:text-left animate-fade-in-up">
+        <div className="max-w-4xl ml-auto text-center md:text-left animate-fade-in-up md:pl-8">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-exo font-bold text-pure-white mb-6 leading-tight">
             Transforme o atendimento de sua clínica com inteligência artificial e reduza custos de equipe enquanto mantém seus agendamentos ativos 24h por dia
           </h1>
