@@ -10,8 +10,8 @@ export const SpecialistSection = () => {
         </h2>
         
         <div className="max-w-5xl mx-auto">
-          <div className="grid md:grid-cols-[300px_1fr] gap-8 items-center">
-            <div className="flex justify-center">
+          <div className="grid md:grid-cols-[300px_1fr] gap-8 items-start">
+            <div className="flex justify-center md:pt-8">
               <div className="relative mx-auto">
                 <div className="absolute inset-0 bg-azuri-blue/30 rounded-full blur-2xl animate-pulse" />
                 <img
