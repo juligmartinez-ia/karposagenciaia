@@ -39,10 +39,10 @@ export const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
           <Button
             onClick={handleCTA}
             size="lg"
-            className="bg-azuri-blue hover:bg-azuri-blue/90 text-pure-white font-semibold px-8 py-6 text-lg rounded-2xl shadow-[0_10px_40px_-10px_hsl(193_55%_54%/0.6)] hover:shadow-[0_15px_50px_-10px_hsl(193_55%_54%/0.8)] transition-all duration-300 hover:scale-105"
+            className="bg-azuri-blue hover:bg-azuri-blue/90 text-pure-white font-semibold px-4 sm:px-8 py-6 text-base sm:text-lg rounded-2xl shadow-[0_10px_40px_-10px_hsl(193_55%_54%/0.6)] hover:shadow-[0_15px_50px_-10px_hsl(193_55%_54%/0.8)] transition-all duration-300 hover:scale-105 w-full sm:w-auto"
           >
             Quero me candidatar à reunião estratégica
-            <ArrowRight className="ml-2 h-5 w-5" />
+            <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
           </Button>
           
           <p className="text-sm text-pure-white/80 mt-4 italic">

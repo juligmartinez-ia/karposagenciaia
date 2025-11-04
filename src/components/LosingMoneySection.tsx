@@ -65,7 +65,7 @@ export const LosingMoneySection = ({ onOpenModal }: LosingMoneySectionProps) => 
               onClick={handleCTA}
               variant="outline"
               size="lg"
-              className="border-2 border-azuri-blue text-azuri-blue hover:bg-azuri-blue hover:text-pure-white font-semibold px-8 py-6 text-lg rounded-2xl transition-all duration-300 shadow-md hover:shadow-lg"
+              className="border-2 border-azuri-blue text-azuri-blue hover:bg-azuri-blue hover:text-pure-white font-semibold px-4 sm:px-8 py-6 text-base sm:text-lg rounded-2xl transition-all duration-300 shadow-md hover:shadow-lg w-full sm:w-auto"
             >
               Quero participar do processo de seleção
             </Button>
