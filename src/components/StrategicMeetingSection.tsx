@@ -30,7 +30,7 @@ export const StrategicMeetingSection = ({ onOpenModal }: StrategicMeetingSection
             Reunião estratégica individual para clínicas que desejam escalar com inteligência
           </p>
           
-          <p className="text-lg text-muted-foreground mb-8 text-center leading-relaxed">
+          <p className="text-lg text-muted-foreground mb-8 text-center leading-relaxed max-w-3xl mx-auto">
             Descubra, em uma sessão personalizada de 45 minutos, como transformar o WhatsApp e o Instagram da sua clínica em um sistema inteligente que responde, qualifica e agenda pacientes automaticamente.
           </p>
           
@@ -40,12 +40,12 @@ export const StrategicMeetingSection = ({ onOpenModal }: StrategicMeetingSection
                 <div className="mt-1 flex-shrink-0">
                   <Check className="h-6 w-6 text-azuri-blue" />
                 </div>
-                <p className="text-foreground text-lg">{benefit}</p>
+                <p className="text-foreground text-lg leading-relaxed">{benefit}</p>
               </div>
             ))}
           </div>
           
-          <div className="bg-azuri-blue/10 border-2 border-azuri-blue rounded-2xl p-6 mb-8">
+          <div className="bg-azuri-blue/10 border-2 border-azuri-blue rounded-2xl p-6 mb-8 shadow-lg">
             <p className="text-foreground text-center font-medium leading-relaxed">
               Por ser uma sessão individual, as vagas são limitadas e cada candidatura é analisada para garantir que o encontro gere resultados reais para a clínica selecionada.
             </p>
@@ -55,7 +55,7 @@ export const StrategicMeetingSection = ({ onOpenModal }: StrategicMeetingSection
             <Button
               onClick={handleCTA}
               size="lg"
-              className="bg-azuri-blue hover:bg-azuri-blue/90 text-pure-white font-semibold px-8 py-6 text-lg rounded-2xl shadow-[0_10px_40px_-10px_hsl(193_55%_54%/0.5)] hover:shadow-[0_15px_50px_-10px_hsl(193_55%_54%/0.7)] transition-all duration-300 hover:scale-105"
+              className="bg-azuri-blue hover:bg-azuri-blue/90 text-pure-white font-semibold px-8 py-6 text-lg rounded-2xl shadow-[0_10px_40px_-10px_hsl(193_55%_54%/0.6)] hover:shadow-[0_15px_50px_-10px_hsl(193_55%_54%/0.8)] transition-all duration-300 hover:scale-105"
             >
               Quero me inscrever para a seleção de vagas
             </Button>

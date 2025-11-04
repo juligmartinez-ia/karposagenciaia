@@ -60,8 +60,10 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         "azuri-blue": "hsl(var(--azuri-blue))",
+        "azuri-blue-dark": "hsl(var(--azuri-blue-dark))",
         "deep-black": "hsl(var(--deep-black))",
         "titanium-gray": "hsl(var(--titanium-gray))",
+        "text-secondary": "hsl(var(--text-secondary))",
         "pure-white": "hsl(var(--pure-white))",
       },
       borderRadius: {

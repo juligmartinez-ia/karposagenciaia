@@ -32,20 +32,20 @@ export const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
             Transforme o atendimento de sua clínica com inteligência artificial e reduza custos de equipe enquanto mantém seus agendamentos ativos 24h por dia
           </h1>
           
-          <p className="text-lg md:text-xl text-titanium-gray mb-8 leading-relaxed">
+          <p className="text-lg md:text-xl text-pure-white/90 mb-8 leading-relaxed">
             Sem contratar mais equipe. Sem perder o toque humano. Com automação aplicada ao WhatsApp e Instagram.
           </p>
           
           <Button
             onClick={handleCTA}
             size="lg"
-            className="bg-azuri-blue hover:bg-azuri-blue/90 text-pure-white font-semibold px-8 py-6 text-lg rounded-2xl shadow-[0_10px_40px_-10px_hsl(193_55%_54%/0.5)] hover:shadow-[0_15px_50px_-10px_hsl(193_55%_54%/0.7)] transition-all duration-300 hover:scale-105"
+            className="bg-azuri-blue hover:bg-azuri-blue/90 text-pure-white font-semibold px-8 py-6 text-lg rounded-2xl shadow-[0_10px_40px_-10px_hsl(193_55%_54%/0.6)] hover:shadow-[0_15px_50px_-10px_hsl(193_55%_54%/0.8)] transition-all duration-300 hover:scale-105"
           >
             Quero me candidatar à reunião estratégica
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
           
-          <p className="text-sm text-titanium-gray mt-4 italic">
+          <p className="text-sm text-pure-white/80 mt-4 italic">
             Vagas limitadas e sujeitas à análise da equipe KARPÓS
           </p>
         </div>

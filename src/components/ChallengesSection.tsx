@@ -43,7 +43,7 @@ export const ChallengesSection = () => {
                 <h3 className="text-xl font-exo font-bold text-pure-white mb-2">
                   {challenge.title}
                 </h3>
-                <p className="text-titanium-gray leading-relaxed">
+                <p className="text-pure-white/85 leading-relaxed">
                   {challenge.description}
                 </p>
               </div>

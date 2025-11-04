@@ -23,7 +23,7 @@ export const SpecialistSection = () => {
             </div>
             
             <div className="space-y-6">
-              <div className="text-pure-white leading-relaxed space-y-4">
+              <div className="text-pure-white leading-relaxed space-y-4 text-base md:text-lg">
                 <p>
                   <strong className="text-azuri-blue">Juliana Martinez</strong> é CEO e fundadora da Agência KARPÓS, estrategista digital especializada em crescimento e automação para negócios na área da saúde.
                 </p>
@@ -35,9 +35,9 @@ export const SpecialistSection = () => {
                 </p>
               </div>
               
-              <div className="relative bg-azuri-blue/10 border-l-4 border-azuri-blue p-6 rounded-r-2xl">
+              <div className="relative bg-azuri-blue/10 border-l-4 border-azuri-blue p-6 rounded-r-2xl shadow-lg">
                 <Quote className="absolute top-4 left-4 h-8 w-8 text-azuri-blue/30" />
-                <p className="text-pure-white italic text-lg pl-8">
+                <p className="text-pure-white italic text-lg md:text-xl pl-8 leading-relaxed">
                   "Enquanto você cuida da saúde de seus pacientes, nós cuidamos da saúde de sua operação."
                 </p>
               </div>

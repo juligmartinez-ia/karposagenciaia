@@ -10,30 +10,32 @@ All colors MUST be HSL.
   :root {
     /* KARPÓS Brand Colors */
     --azuri-blue: 193 55% 54%;
-    --deep-black: 0 0% 5%;
-    --titanium-gray: 0 0% 65%;
+    --azuri-blue-dark: 193 60% 45%;
+    --deep-black: 0 0% 8%;
+    --titanium-gray: 0 0% 85%;
+    --text-secondary: 0 0% 75%;
     --pure-white: 0 0% 100%;
     
     /* Semantic Tokens */
     --background: 0 0% 100%;
-    --foreground: 0 0% 5%;
+    --foreground: 0 0% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 5%;
-    --card-dark: 0 0% 5%;
-    --card-dark-foreground: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    --card-dark: 0 0% 10%;
+    --card-dark-foreground: 0 0% 98%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 5%;
+    --popover-foreground: 0 0% 10%;
 
     --primary: 193 55% 54%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 65%;
-    --secondary-foreground: 0 0% 5%;
+    --secondary: 0 0% 85%;
+    --secondary-foreground: 0 0% 10%;
 
     --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 65%;
+    --muted-foreground: 0 0% 40%;
 
     --accent: 193 55% 54%;
     --accent-foreground: 0 0% 100%;

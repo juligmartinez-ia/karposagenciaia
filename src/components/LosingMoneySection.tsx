@@ -54,8 +54,8 @@ export const LosingMoneySection = ({ onOpenModal }: LosingMoneySectionProps) => 
             })}
           </div>
           
-          <div className="bg-azuri-blue/10 border border-azuri-blue/30 rounded-2xl p-6 mb-8">
-            <p className="text-foreground leading-relaxed">
+          <div className="bg-azuri-blue/10 border border-azuri-blue/30 rounded-2xl p-6 mb-8 shadow-lg">
+            <p className="text-foreground leading-relaxed text-center">
               A KARPÓS implementa um sistema de atendimento automatizado que responde, qualifica e agenda pacientes em tempo real, 24 horas por dia, 7 dias por semana, mantendo o toque humano de sua clínica.
             </p>
           </div>
@@ -65,7 +65,7 @@ export const LosingMoneySection = ({ onOpenModal }: LosingMoneySectionProps) => 
               onClick={handleCTA}
               variant="outline"
               size="lg"
-              className="border-2 border-azuri-blue text-azuri-blue hover:bg-azuri-blue hover:text-pure-white font-semibold px-8 py-6 text-lg rounded-2xl transition-all duration-300"
+              className="border-2 border-azuri-blue text-azuri-blue hover:bg-azuri-blue hover:text-pure-white font-semibold px-8 py-6 text-lg rounded-2xl transition-all duration-300 shadow-md hover:shadow-lg"
             >
               Quero participar do processo de seleção
             </Button>

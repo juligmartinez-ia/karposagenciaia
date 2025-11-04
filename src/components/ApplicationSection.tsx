@@ -23,11 +23,11 @@ export const ApplicationSection = ({ onOpenModal }: ApplicationSectionProps) => 
             Candidate sua clínica para a reunião estratégica
           </h2>
           
-          <p className="text-lg text-muted-foreground mb-8 text-center leading-relaxed">
+          <p className="text-lg text-muted-foreground mb-8 text-center leading-relaxed max-w-3xl mx-auto">
             As vagas são limitadas e analisadas individualmente. Preencha o formulário para participar da próxima rodada de reuniões e receba um diagnóstico personalizado de sua operação.
           </p>
           
-          <div className="bg-gradient-to-br from-azuri-blue/10 to-azuri-blue/5 border border-azuri-blue/30 rounded-2xl p-8 mb-8">
+          <div className="bg-gradient-to-br from-azuri-blue/10 to-azuri-blue/5 border border-azuri-blue/30 rounded-2xl p-8 mb-8 shadow-lg">
             <div className="flex items-center gap-3 mb-6">
               <Gift className="h-8 w-8 text-azuri-blue" />
               <h3 className="text-2xl font-exo font-bold text-foreground">
@@ -39,7 +39,7 @@ export const ApplicationSection = ({ onOpenModal }: ApplicationSectionProps) => 
               {bonuses.map((bonus, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <span className="text-2xl">🎁</span>
-                  <p className="text-foreground text-lg">{bonus}</p>
+                  <p className="text-foreground text-lg leading-relaxed">{bonus}</p>
                 </div>
               ))}
             </div>
@@ -49,7 +49,7 @@ export const ApplicationSection = ({ onOpenModal }: ApplicationSectionProps) => 
             <Button
               onClick={handleCTA}
               size="lg"
-              className="bg-azuri-blue hover:bg-azuri-blue/90 text-pure-white font-semibold px-8 py-6 text-lg rounded-2xl shadow-[0_10px_40px_-10px_hsl(193_55%_54%/0.5)] hover:shadow-[0_15px_50px_-10px_hsl(193_55%_54%/0.7)] transition-all duration-300 hover:scale-105"
+              className="bg-azuri-blue hover:bg-azuri-blue/90 text-pure-white font-semibold px-8 py-6 text-lg rounded-2xl shadow-[0_10px_40px_-10px_hsl(193_55%_54%/0.6)] hover:shadow-[0_15px_50px_-10px_hsl(193_55%_54%/0.8)] transition-all duration-300 hover:scale-105"
             >
               Quero me candidatar agora à seleção da KARPÓS
               <ArrowRight className="ml-2 h-5 w-5" />
