@@ -17,7 +17,7 @@ export const SpecialistSection = () => {
                 <img
                   src={julianaImage}
                   alt="Juliana Martinez - CEO da Agência KARPÓS"
-                  className="relative w-64 h-64 rounded-full object-cover object-center border-4 border-azuri-blue/50 shadow-[0_0_40px_hsl(193_55%_54%/0.3)] mx-auto"
+                  className="relative w-64 h-64 rounded-full object-cover object-[center_35%] border-4 border-azuri-blue/50 shadow-[0_0_40px_hsl(193_55%_54%/0.3)] mx-auto"
                 />
               </div>
             </div>
