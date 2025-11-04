@@ -10,7 +10,7 @@ export const DiscoverySection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-deep-black to-azuri-blue/20">
+    <section className="py-20 bg-deep-black">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-exo font-bold text-pure-white text-center mb-12">

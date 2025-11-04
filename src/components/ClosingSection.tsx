@@ -11,9 +11,9 @@ export const ClosingSection = ({ onOpenModal }: ClosingSectionProps) => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-deep-black via-azuri-blue/30 to-deep-black relative overflow-hidden">
+    <section className="py-20 bg-deep-black relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(193_55%_54%/0.15),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(193_55%_54%/0.08),transparent_50%)]" />
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
