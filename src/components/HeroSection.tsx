@@ -30,10 +30,6 @@ export const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
         {/* Content Section - Bottom on mobile, Left on desktop */}
         <div className="relative order-2 md:order-1 flex items-center justify-center px-6 py-12 md:py-20">
           <div className="max-w-2xl animate-fade-in-up">
-            <p className="text-sm md:text-base text-azuri-blue mb-4 font-semibold tracking-wide">
-              MasterClass: Terça Feira (11/11) às 19h.
-            </p>
-            
             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-exo font-bold text-pure-white mb-6 leading-tight">
               Transforme o atendimento de sua clínica com inteligência artificial e reduza custos de equipe enquanto mantém seus agendamentos ativos 24h por dia
             </h1>
