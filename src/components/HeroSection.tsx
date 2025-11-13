@@ -28,8 +28,8 @@ export const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
         </div>
 
         {/* Content Section - Overlaid on mobile, Left on desktop */}
-        <div className="relative md:order-1 flex items-end md:items-center min-h-screen px-6 pb-8 pt-[45vh] md:pt-0 md:py-20">
-          <div className="max-w-2xl animate-fade-in-up w-full">
+        <div className="relative md:order-1 flex items-end md:items-center min-h-screen px-6 pb-8 pt-[45vh] md:pt-20 md:pb-20">
+          <div className="max-w-2xl animate-fade-in-up w-full md:mt-12">
             <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-exo font-bold text-pure-white mb-4 md:mb-6 leading-tight">
               Transforme o atendimento de sua clínica com inteligência artificial e reduza custos de equipe enquanto mantém seus agendamentos ativos 24h por dia
             </h1>
