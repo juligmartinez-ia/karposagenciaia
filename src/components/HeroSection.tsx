@@ -13,44 +13,39 @@ export const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
 
   return (
     <section className="relative min-h-screen bg-deep-black overflow-hidden">
-      {/* Mobile: Overlaid content, Desktop: Split layout */}
-      <div className="md:grid md:grid-cols-2 min-h-screen">
-        {/* Image Section - Background on mobile, Right on desktop */}
-        <div className="absolute inset-0 md:relative md:order-2 md:h-screen">
-          <div 
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ 
-              backgroundImage: `url(${heroBackground})`,
-            }}
-          />
-          {/* Gradient overlay for better text visibility */}
-          <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-l from-transparent via-deep-black/60 to-deep-black/95 md:from-transparent md:via-transparent md:to-deep-black" />
-        </div>
+      {/* Full screen background image with transparency */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center opacity-40"
+        style={{ 
+          backgroundImage: `url(${heroBackground})`,
+        }}
+      />
+      {/* Dark overlay for better text contrast */}
+      <div className="absolute inset-0 bg-deep-black/50" />
 
-        {/* Content Section - Overlaid on mobile, Left on desktop */}
-        <div className="relative md:order-1 flex items-end md:items-center min-h-screen px-6 pb-8 pt-[45vh] md:pt-20 md:pb-20">
-          <div className="max-w-2xl animate-fade-in-up w-full md:mt-12">
-            <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-exo font-bold text-pure-white mb-4 md:mb-6 leading-tight">
-              Transforme o atendimento de sua clínica com inteligência artificial e reduza custos de equipe enquanto mantém seus agendamentos ativos 24h por dia
-            </h1>
-            
-            <p className="text-sm md:text-lg lg:text-xl text-pure-white/80 mb-6 md:mb-8 leading-relaxed">
-              Sem contratar mais equipe. Sem perder o toque humano. Com automação aplicada ao WhatsApp e Instagram.
-            </p>
-            
-            <Button
-              onClick={handleCTA}
-              size="lg"
-              className="bg-azuri-blue hover:bg-azuri-blue/90 text-deep-black font-bold px-6 sm:px-10 py-5 md:py-6 text-sm md:text-base lg:text-lg rounded-2xl shadow-[0_10px_40px_-10px_hsl(193_55%_54%/0.6)] hover:shadow-[0_15px_50px_-10px_hsl(193_55%_54%/0.8)] transition-all duration-300 hover:scale-105 w-full sm:w-auto"
-            >
-              Quero me candidatar à reunião estratégica
-              <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
-            </Button>
-            
-            <p className="text-xs md:text-sm text-pure-white/70 mt-3 md:mt-4 italic">
-              Vagas limitadas e sujeitas à análise da equipe KARPÓS
-            </p>
-          </div>
+      {/* Centered Content */}
+      <div className="relative flex items-center justify-center min-h-screen px-6 py-12">
+        <div className="max-w-4xl animate-fade-in-up w-full text-center">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-exo font-bold text-pure-white mb-4 md:mb-6 leading-tight">
+            Transforme o atendimento de sua clínica com inteligência artificial e reduza custos de equipe enquanto mantém seus agendamentos ativos 24h por dia
+          </h1>
+          
+          <p className="text-sm md:text-lg lg:text-xl text-pure-white/80 mb-6 md:mb-8 leading-relaxed max-w-3xl mx-auto">
+            Sem contratar mais equipe. Sem perder o toque humano. Com automação aplicada ao WhatsApp e Instagram.
+          </p>
+          
+          <Button
+            onClick={handleCTA}
+            size="lg"
+            className="bg-azuri-blue hover:bg-azuri-blue/90 text-deep-black font-bold px-6 sm:px-10 py-5 md:py-6 text-sm md:text-base lg:text-lg rounded-2xl shadow-[0_10px_40px_-10px_hsl(193_55%_54%/0.6)] hover:shadow-[0_15px_50px_-10px_hsl(193_55%_54%/0.8)] transition-all duration-300 hover:scale-105"
+          >
+            Quero me candidatar à reunião estratégica
+            <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
+          </Button>
+          
+          <p className="text-xs md:text-sm text-pure-white/70 mt-3 md:mt-4 italic">
+            Vagas limitadas e sujeitas à análise da equipe KARPÓS
+          </p>
         </div>
       </div>
       
