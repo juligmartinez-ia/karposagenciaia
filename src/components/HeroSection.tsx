@@ -27,7 +27,7 @@ export const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
       <div className="relative flex items-center justify-center min-h-screen px-6 py-12">
         <div className="max-w-4xl animate-fade-in-up w-full text-center">
           <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-exo font-bold text-pure-white mb-4 md:mb-6 leading-tight">
-            Transforme o atendimento de sua clínica com inteligência artificial e reduza custos de equipe enquanto mantém seus agendamentos ativos 24h por dia
+            Automatize o atendimento da sua clínica com inteligência artificial, responda pacientes em segundos, 24h por dia, e reduza drasticamente o custo com equipe sem perder nenhum agendamento.
           </h1>
           
           <p className="text-sm md:text-lg lg:text-xl text-pure-white/80 mb-6 md:mb-8 leading-relaxed max-w-3xl mx-auto">
