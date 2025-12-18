@@ -26,7 +26,7 @@ export const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
       {/* Centered Content */}
       <div className="relative flex items-center justify-center min-h-screen px-6 py-12">
         <div className="max-w-4xl animate-fade-in-up w-full text-center">
-          <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-exo font-bold text-pure-white mb-4 md:mb-6 leading-tight">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-exo font-bold text-pure-white mb-4 md:mb-6 leading-tight">
             Automatize o atendimento da sua clínica com inteligência artificial, responda pacientes em segundos, 24h por dia, e reduza drasticamente o custo com equipe sem perder nenhum agendamento.
           </h1>
           
